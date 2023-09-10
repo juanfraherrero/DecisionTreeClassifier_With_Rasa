@@ -1,0 +1,10 @@
+version: "3.1"
+
+stories:
+
+- story: recomendacion
+  steps:
+  - intent: recomendarDondeBuscarInfo
+  - action: utter_recomendar
+  - intent: ingresarDatos
+  - action: action_opcion

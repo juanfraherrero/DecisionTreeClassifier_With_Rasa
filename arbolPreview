@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<edad &le; 48.5<br/>gini = 0.497<br/>samples = 2455<br/>value = [1140, 1315]<br/>class = 1>, fillcolor="#e5f2fc"] ;
+1 [label=<estudios_Primaria &le; 0.5<br/>gini = 0.344<br/>samples = 1412<br/>value = [312, 1100]<br/>class = 1>, fillcolor="#71b9ec"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<estudios_Sin estudios &le; 0.5<br/>gini = 0.176<br/>samples = 849<br/>value = [83, 766]<br/>class = 1>, fillcolor="#4ea8e8"] ;
+1 -> 2 ;
+3 [label=<gini = 0.168<br/>samples = 844<br/>value = [78, 766]<br/>class = 1>, fillcolor="#4da7e8"] ;
+2 -> 3 ;
+4 [label=<gini = 0.0<br/>samples = 5<br/>value = [5, 0]<br/>class = 0>, fillcolor="#e58139"] ;
+2 -> 4 ;
+5 [label=<edad &le; 29.5<br/>gini = 0.483<br/>samples = 563<br/>value = [229, 334]<br/>class = 1>, fillcolor="#c1e0f7"] ;
+1 -> 5 ;
+6 [label=<gini = 0.317<br/>samples = 187<br/>value = [37, 150]<br/>class = 1>, fillcolor="#6ab5eb"] ;
+5 -> 6 ;
+7 [label=<gini = 0.5<br/>samples = 376<br/>value = [192, 184]<br/>class = 0>, fillcolor="#fefaf7"] ;
+5 -> 7 ;
+8 [label=<estudios_Superiores &le; 0.5<br/>gini = 0.327<br/>samples = 1043<br/>value = [828, 215]<br/>class = 0>, fillcolor="#eca26c"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<edad &le; 56.5<br/>gini = 0.285<br/>samples = 987<br/>value = [817, 170]<br/>class = 0>, fillcolor="#ea9b62"] ;
+8 -> 9 ;
+10 [label=<gini = 0.473<br/>samples = 260<br/>value = [160, 100]<br/>class = 0>, fillcolor="#f5d0b5"] ;
+9 -> 10 ;
+11 [label=<gini = 0.174<br/>samples = 727<br/>value = [657, 70]<br/>class = 0>, fillcolor="#e88e4e"] ;
+9 -> 11 ;
+12 [label=<edad &le; 57.5<br/>gini = 0.316<br/>samples = 56<br/>value = [11, 45]<br/>class = 1>, fillcolor="#69b5eb"] ;
+8 -> 12 ;
+13 [label=<gini = 0.071<br/>samples = 27<br/>value = [1, 26]<br/>class = 1>, fillcolor="#41a1e6"] ;
+12 -> 13 ;
+14 [label=<gini = 0.452<br/>samples = 29<br/>value = [10, 19]<br/>class = 1>, fillcolor="#a1d1f3"] ;
+12 -> 14 ;
+}

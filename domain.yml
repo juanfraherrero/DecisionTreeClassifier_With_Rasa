@@ -1,0 +1,22 @@
+version: "3.1"
+
+intents:
+  - recomendarDondeBuscarInfo
+  - ingresarDatos
+
+responses: 
+  utter_recomendar:
+  - text: "Buenas, claro! Decime tu edad, sexo y estudios"
+  - text: "Claro! Dime tu edad, sexo y estudios"
+
+actions:
+  - action_opcion
+
+entities:
+  - anios
+  - sexo
+  - estudios
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,45 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: pedirOpcion
+  examples: |
+    - dame una opción
+    - quiero una opcion
+    - pido opcion
+    - opcion
+
+- intent: recomendarDondeBuscarInfo
+  examples: |
+    - Buenas, donde me recomendarías buscar información?
+    - hola quiero buscar información, donde me recomendas?
+    - donde tengo que ir a buscar informacion
+    - a donde puedo ir a buscar información?
+    - quiero ir a un lugar a buscar información
+    - donde puedo buscar informacion
+
+- intent: ingresarDatos
+  examples: |
+    - tengo [18](anios) soy [hombre](sexo) y tengo estudios [secundarios](estudios)
+    - tengo [36](anios) soy [mujer](sexo) y tengo estudios [universitarios](estudios)
+    - tengo [65](anios) soy [hombre](sexo) y tengo estudios [sin](estudios)
+    - tengo [80](anios) soy [mujer](sexo) y tengo estudios [superiores](estudios)
+    - tengo [14](anios) soy [mujer](sexo) y tengo estudios [secundarios](estudios)
+    - tengo [56](anios) soy [hombre](sexo) y tengo estudios [universitarios](estudios)
+    - tengo [14](anios) soy [mujer](sexo) y tengo estudios [sin](estudios)
+    - tengo [11](anios) soy [hombre](sexo) y tengo estudios [superiores](estudios)
