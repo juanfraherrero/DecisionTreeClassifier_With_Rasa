@@ -35,7 +35,7 @@ class ActionHelloWorld(Action):
         estudios = estudios.lower()
 
         # convertimos a one-hot encoding
-        sexo_mujer = "0" if sexo == "mujer" else "1"
+        sexo_mujer = "1" if sexo == "mujer" else "0"
         estudios_sin = "1" if estudios == "sin" else "0"
         estudios_primarios = "1" if estudios == "primario" else "0"
         estudios_secundarios = "1" if estudios == "secundario" else "0"
@@ -79,8 +79,9 @@ from sklearn import tree
 
 # Obtenemos el dataset a entrenar
 df = pd.read_csv('https://raw.githubusercontent.com/jsulopz/data/main/uso_internet_espana.csv')
+print(df.info())
 df = df.drop(columns=['Unnamed: 0']) 
-
+print(df.info())
 # Imprimimos 5 filas aleatorias
 print("5 EJEMPLOS DE LOS DATOS....................................................")
 print(df.sample(5))
